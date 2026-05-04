@@ -1,17 +1,21 @@
 ﻿
 using System.Collections;
 
+
+
+/* O ArrayList era utilizado antigamente, mas ele não restringe
+ o tipo de um elemento em uma coleção, então muitas vezes era necessário 
+verificar o tipo do elemento antes de manipular ele, o que dava mais trabalho. 
+PS: a coleção acima não é uma ArrayList() ela é só um Array*/
+
 var diasDaSemana = new DiasDaSemana();
 
 foreach (string dia in diasDaSemana) //IEnumerable<string>
 {
     Console.WriteLine(dia);
 }
-
-/* O ArrayList era utilizado antigamente, mas ele não restringe
- o tipo de um elemento em uma coleção, então muitas vezes era necessário 
-verificar o tipo do elemento antes de manipular ele, o que dava mais trabalho. 
-PS: a coleção acima não é uma ArrayList() ela é só um Array*/
+// esse foreach na verdade é uma simplificação do C#, na realidade ele está
+// fazendo basicamente isso daqui 
 
 
 var carrinho = new List<Produto>()
